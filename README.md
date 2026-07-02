@@ -1,119 +1,143 @@
-# 🧮 Modern Calculator App
+# ✊✋✌️ Rock Paper Scissors Game
 
-โปรแกรมเครื่องคิดเลขสไตล์มินิมอล (Modern Calculator) ที่ออกแบบด้วยธีม **Dark Mode** ใช้งานง่าย รองรับการใช้งาน 2 รูปแบบ ได้แก่
-
-- 🌐 **Web Version** (HTML, CSS, JavaScript)
-- 🖥️ **Desktop Version** (Python Tkinter GUI)
-
-สามารถคำนวณได้อย่างถูกต้อง พร้อมระบบป้องกันข้อผิดพลาดทางคณิตศาสตร์ เช่น การหารด้วยศูนย์
+เกม **เป่ายิ้งฉุบ (Rock Paper Scissors)** พัฒนาด้วย **Python และ Tkinter** โดยมีหน้าต่าง GUI ที่ใช้งานง่าย พร้อมธีม **Dark Mode** แสดงผลคะแนนระหว่างผู้เล่นและคอมพิวเตอร์แบบเรียลไทม์
 
 ---
 
-## ✨ Features
+## 🎮 Features
 
-- 🎨 ดีไซน์ Modern Dark Mode
-- ➕ รองรับการบวก (+)
-- ➖ รองรับการลบ (-)
-- ✖️ รองรับการคูณ (×)
-- ➗ รองรับการหาร (÷)
-- 🔄 ปุ่ม AC / C สำหรับล้างข้อมูล
-- 🔁 ปุ่ม +/- สำหรับสลับค่าบวกและลบ
-- 💯 ปุ่ม % สำหรับคำนวณเปอร์เซ็นต์
-- ⚠️ ระบบแจ้งเตือน Error เมื่อคำนวณผิดพลาด
-- 🔢 จำกัดจำนวนทศนิยมเพื่อป้องกันตัวเลขยาวเกินไป
-
----
-
-## 🚀 Setup & Usage
-
-### 🌐 Web Version
-
-1. ดาวน์โหลดโปรเจกต์
-
-```bash
-git clone https://github.com/USERNAME/ModernCalculator.git
-```
-
-2. เข้าโฟลเดอร์โปรเจกต์
-
-```bash
-cd ModernCalculator
-```
-
-3. เปิดไฟล์
-
-```text
-calculator.html
-```
-
-ด้วยเว็บเบราว์เซอร์ เช่น
-
-- Google Chrome
-- Microsoft Edge
-- Firefox
+- 🎨 หน้าต่าง GUI สไตล์ Dark Mode
+- ✊ เลือก ค้อน
+- ✋ เลือก กระดาษ
+- ✌️ เลือก กรรไกร
+- 🤖 คอมพิวเตอร์สุ่มตัวเลือกอัตโนมัติ
+- 🏆 ระบบนับคะแนนผู้เล่นและคอมพิวเตอร์
+- 📢 แสดงผลแพ้ ชนะ หรือเสมอ
+- 🔄 ปุ่มรีเซ็ตคะแนนเพื่อเริ่มเกมใหม่
+- 😊 ใช้อีโมจิเพื่อเพิ่มความสวยงามของเกม
 
 ---
 
-### 🖥️ Python GUI Version
-
-ติดตั้ง Python 3 ก่อน
-
-จากนั้นรันคำสั่ง
-
-```bash
-python calculator.py
-```
-
----
-
-## 🛠️ Tech Stack
-
-### Web Version
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-
-### Desktop Version
+## 🖥️ Technologies Used
 
 - Python 3
 - Tkinter
+- Random Module
+
+---
+
+## 📦 Installation
+
+### 1. Clone โปรเจกต์
+
+```bash
+git clone https://github.com/USERNAME/RockPaperScissors.git
+```
+
+### 2. เข้าโฟลเดอร์โปรเจกต์
+
+```bash
+cd RockPaperScissors
+```
+
+### 3. ตรวจสอบ Python
+
+```bash
+python --version
+```
+
+### 4. รันเกม
+
+```bash
+python rps_game.py
+```
+
+> หากไฟล์ของคุณชื่ออื่น เช่น `main.py` ให้เปลี่ยนเป็น
+
+```bash
+python main.py
+```
+
+---
+
+## 🎮 วิธีเล่น
+
+1. กดเลือกอาวุธที่ต้องการ
+   - ✊ ค้อน
+   - ✋ กระดาษ
+   - ✌️ กรรไกร
+
+2. คอมพิวเตอร์จะสุ่มอาวุธ
+
+3. โปรแกรมจะแสดงผลว่า
+
+- 🎉 คุณชนะ
+- 😢 คุณแพ้
+- 🤝 เสมอ
+
+4. คะแนนจะถูกอัปเดตอัตโนมัติ
+
+5. กด **รีเซ็ตคะแนน 🔄** เพื่อเริ่มเกมใหม่
+
+---
+
+## 🏆 กติกา
+
+| ผู้เล่น | ชนะ |
+|---------|------|
+| ✊ ค้อน | ✌️ กรรไกร |
+| ✋ กระดาษ | ✊ ค้อน |
+| ✌️ กรรไกร | ✋ กระดาษ |
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-ModernCalculator/
+RockPaperScissors/
 │
-├── calculator.html
-├── style.css
-├── script.js
-├── calculator.py
-├── assets/
-└── README.md
+├── rps_game.py
+├── README.md
+└── images/        (ถ้ามี)
 ```
 
 ---
 
 ## 📸 Screenshot
 
-เพิ่มรูปตัวอย่างโปรแกรมไว้ที่นี่
+เพิ่มรูปหน้าจอเกมไว้ในโฟลเดอร์ เช่น
 
+```text
+images/screenshot.png
 ```
-![Calculator](images/screenshot.png)
+
+แล้วเพิ่มโค้ดนี้
+
+```markdown
+![Rock Paper Scissors](images/screenshot.png)
 ```
 
 ---
 
-## 📄 License
+## 🚀 Future Improvements
 
-โปรเจกต์นี้จัดทำขึ้นเพื่อการศึกษา สามารถนำไปพัฒนาและต่อยอดได้
-
-MIT License
+- เพิ่มระบบ Best of 3 / Best of 5
+- เพิ่มเสียงประกอบ
+- เพิ่ม Animation
+- เพิ่มระดับความยากของ AI
+- เพิ่มระบบบันทึกคะแนนสูงสุด
+- เพิ่มโหมดผู้เล่น 2 คน
 
 ---
 
 ## 👨‍💻 Developer
 
 **Sarawut Nochote**
+
+---
+
+## 📄 License
+
+This project is developed for educational purposes.
+
+MIT License
